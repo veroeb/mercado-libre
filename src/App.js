@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles.scss';
 
 import React from "react"; 
 import {
@@ -12,13 +12,14 @@ import {
 import Navbar from './Components/Navbar';
 import ScrollToTop from './Components/ScrollToTop';
 import Index from './Pages/Index';
+import Path from './Components/Path';
 
 function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      {/* <Navbar /> */}
       <Navbar />
+      <Path />
       <Switch>
         <Route path="/"> 
           <Index />

@@ -1,0 +1,44 @@
+$primary-color:  #ffe600 ;
+$secondary-color:  #eeeeee  ;
+$description-color: #999999;
+
+body{
+  background-color: $secondary-color !important;
+}
+
+/* Navbar styles */
+nav{
+  &.navbar {
+    background-color: $primary-color;
+  }
+}
+
+input{
+  &.form-control{
+    border: none;
+    font-size: 18px;
+  }
+
+  &.form-control:focus {
+    box-shadow: none;
+  }
+}
+
+button{
+  &.search-btn{
+    background-color: $secondary-color;
+    border: none;
+
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
+
+/* End of navbar styles */
+
+/* Description styles */
+p{
+  color: $description-color;
+  font-size: .9rem;
+}
